@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content=" ">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="">
+  <title>Tic Tac Toe
+  </title>
+</head>
+<body>
+  <h2 class="header">Now O's turn!</h2>
+  
+  <div class="wrapper">
+      <div class="opponent">
+    <label for="switch" class="label">
+      <input type="checkbox" id="switch">AI Mode
+      <div class="switchOnOff"></div>
+    </label>
+  </div>
+  <div class="menu">
+  <div class="scoreBoard" onclick="scoreBoard()">Score</div>
+  <div class="reload" onclick="keepPlay()">Refresh</div>
+</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </div>
+  <div class="result">
+    <h3 class="winnerName"></h3>
+    <h2 class="scorePerWin">Your Score : 10</h2>
+    <h4 class="total"></h4>
+    <div class="sepScore">
+      <h5>◯ : <span class="score">000</span></h5>
+      <h5>⛌ : <span class="score">000</span></h5>
+    </div>
+    <div class="tools">
+      <button onclick="newStart()" type="submit">New Game</button> <button onclick="keepPlay()" type="submit">Continue</button>
+    </div>
+  </div>
+
+
+  <script src="app.js">
+
+  </script>
+</body>
+
+</html>
